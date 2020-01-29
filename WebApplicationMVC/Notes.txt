@@ -1,0 +1,24 @@
+﻿
+
+following this tutorial to create this solution
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/?view=aspnetcore-3.1
+
+didn't use the same .net has tutorial
+using .NET Core 2.1 and VS 2017
+instead of .NET Core 3.1 SDK or later and Visual Studio 2019 16.4 or later
+
+when adding controller selected add controller directly, then MVC Contoller - Empty because the other way didn't add scaffold (i think this is how it wires up the controller)
+
+Controller class does not like having more than one method with the same name (no overloads)
+
+/HelloWorld/Welcome?name=Rick&numtimes=4
+/HelloWorld/Welcome/3?name=Rick
+
+"ConnectionStrings": {
+    "MvcMovieContext": "Server=(localdb)\\mssqllocaldb;Database=MvcMovieContext-1;Trusted_Connection=True;MultipleActiveResultSets=true"
+  } 
+
+
+  Finally used Install-Package Microsoft.EntityFrameworkCore.Tools -Version 2.1.14
+
+  "WebApplicationMVCContext": "Server=MID028W10\\SQLEXPRESS;Database=WebApplicationMVCContext-fe09657a-11ba-45b2-a190-1ae3d059a20d;Trusted_Connection=True;MultipleActiveResultSets=true"
